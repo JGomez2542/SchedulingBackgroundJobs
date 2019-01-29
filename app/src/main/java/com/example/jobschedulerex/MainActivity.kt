@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.work.*
 import com.firebase.jobdispatcher.FirebaseJobDispatcher
 import com.firebase.jobdispatcher.GooglePlayDriver
 import com.firebase.jobdispatcher.Trigger
@@ -69,5 +70,11 @@ class MainActivity : AppCompatActivity() {
                 )
                 .build()
         )
+    }
+
+    //Use PeriodicWorkRequestBuilder for recurring tasks
+    fun startWorkManager(view: View) {
+        val logWorker = OneTimeWorkRequestBuilder<LogWorker>().build()
+        WorkManager.getInstance().enqueue(logWorker)
     }
 }
