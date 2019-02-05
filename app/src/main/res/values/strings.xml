@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">JobSchedulerEx</string>
     <string name="notification_channel_name">Worker Channel</string>
+    <string name="work_manager_action">Work Manager</string>
+    <string name="pending_intent_action">Pending Intent</string>
 </resources>
