@@ -76,11 +76,12 @@ class MainActivity : AppCompatActivity() {
     fun startWorkManager(view: View) {
         val randomWorker = OneTimeWorkRequestBuilder<RandomWorker>().build()
         val logWorker = OneTimeWorkRequestBuilder<LogWorker>().build()
+        val notificationWorker = OneTimeWorkRequestBuilder<NotificationWorker>().build()
         //Here we start off by completing the work related to generating a random integer, return the random integer, then do the work
-        //related to logging the integer.
+        //related to logging the integer and creating a notification for the user.
         WorkManager.getInstance()
             .beginWith(randomWorker)
-            .then(logWorker)
+            .then(listOf(logWorker, notificationWorker))
             .enqueue()
     }
 }

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">JobSchedulerEx</string>
+    <string name="notification_channel_name">Worker Channel</string>
 </resources>
