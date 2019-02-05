@@ -74,7 +74,13 @@ class MainActivity : AppCompatActivity() {
 
     //Use PeriodicWorkRequestBuilder for recurring tasks
     fun startWorkManager(view: View) {
+        val randomWorker = OneTimeWorkRequestBuilder<RandomWorker>().build()
         val logWorker = OneTimeWorkRequestBuilder<LogWorker>().build()
-        WorkManager.getInstance().enqueue(logWorker)
+        //Here we start off by completing the work related to generating a random integer, return the random integer, then do the work
+        //related to logging the integer.
+        WorkManager.getInstance()
+            .beginWith(randomWorker)
+            .then(logWorker)
+            .enqueue()
     }
 }
