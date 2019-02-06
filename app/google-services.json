@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "442010142333",
+    "firebase_url": "https://jobschedulerex.firebaseio.com",
+    "project_id": "jobschedulerex",
+    "storage_bucket": "jobschedulerex.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442010142333:android:d6017d8b881e87ae",
+        "android_client_info": {
+          "package_name": "com.example.jobschedulerex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442010142333-2cuvmt4ogfnsjh8av2qifpsu34nfkjf1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jobschedulerex",
+            "certificate_hash": "c87203c3e6acd4729922608bdd23a419082f643d"
+          }
+        },
+        {
+          "client_id": "442010142333-s5fv53kps1557cukjj3i3mfrhruvosu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwfDu37lnc7dU2_5WjiGjBvnWtpWYvCNo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442010142333-s5fv53kps1557cukjj3i3mfrhruvosu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
